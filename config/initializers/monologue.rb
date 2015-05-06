@@ -1,5 +1,5 @@
 Monologue.config do |config|
-  config.site_name = "Marcos Serpa"
+  config.site_name = "coding and cooking"
   config.site_subtitle = "coding and cooking"
   config.site_url = 'http://marcoserpa.com'
 
