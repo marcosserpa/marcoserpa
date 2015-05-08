@@ -1,5 +1,5 @@
 Monologue.config do |config|
-  config.site_name = "@marcosserpa / Marcos Serpa"
+  config.site_name = "coding and cooking"
   config.site_subtitle = "coding and cooking"
   config.site_url = 'http://marcoserpa.com'
 
@@ -25,10 +25,10 @@ Monologue.config do |config|
   config.sidebar = ['about', 'latest_posts', 'latest_tweets', 'categories', 'tag_cloud']
 
   # SOCIAL
-  config.twitter_username = 'MarcosSerpa'
+  config.twitter_username = 'marcosserpa'
   config.facebook_url = 'https://www.facebook.com/serpamarcos'
   config.facebook_logo = 'logo.png'
-  config.linkedin_url = 'https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile'
+  config.linkedin_url = 'https://br.linkedin.com/pub/marcos-serpa/40/80b/14b'
   config.github_username = 'marcosserpa'
   config.show_rss_icon = true
 end
