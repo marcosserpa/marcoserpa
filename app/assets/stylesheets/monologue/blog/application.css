@@ -11,3 +11,13 @@
  *= require monologue/blog/fonts
  *= require monologue/blog/custom
 */
+
+.end_footer {
+  padding: 40px;
+}
+
+.seal {
+  width: 131px;
+  margin-left: auto;
+  margin-right: auto;
+}
