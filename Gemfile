@@ -38,6 +38,8 @@ gem 'mina-unicorn', :require => false
 # gem 'debugger', group: [:development, :test]
 
 gem 'monologue' # blogging engine
+gem 'carrierwave'
+gem 'mini_magick'
 
 #group :development do
 #  # Use sqlite3 as the database for Active Record
