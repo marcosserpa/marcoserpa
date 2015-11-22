@@ -38,6 +38,7 @@ gem 'mina-unicorn', :require => false
 # gem 'debugger', group: [:development, :test]
 
 gem 'monologue' # blogging engine
+gem "monologue-markdown", git: 'https://github.com/marcosserpa/monologue-markdown', branch: 'develop'
 gem 'carrierwave'
 gem 'mini_magick'
 

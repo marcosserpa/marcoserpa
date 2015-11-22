@@ -17,4 +17,4 @@
 /vendor/bundle
 
 # Ignore rbenv folders
-/gems
+.gems
