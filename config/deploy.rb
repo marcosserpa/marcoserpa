@@ -13,7 +13,7 @@ require 'mina/unicorn'
 set :domain, '104.236.212.37'
 set :deploy_to, '/home/deploy/marcoserpa/'
 set :repository, 'https://github.com/marcosserpa/marcoserpa.git'
-set :branch, 'release/markdown'
+set :branch, 'master'
 set :user, 'deploy'
 set :forward_agent, true
 set :port, '4040'
