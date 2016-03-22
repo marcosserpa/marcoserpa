@@ -34,11 +34,13 @@ gem 'unicorn'
 gem 'mina'
 gem 'mina-unicorn', :require => false
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+# Use byebug
+gem 'byebug', group: [:development, :test]
 
 gem 'monologue' # blogging engine
 gem "monologue-markdown", git: 'https://github.com/marcosserpa/monologue-markdown', branch: 'develop'
+gem 'redcarpet'
+gem 'coderay'
 gem 'carrierwave'
 gem 'mini_magick'
 
