@@ -34,10 +34,10 @@ gem 'unicorn'
 gem 'mina'
 gem 'mina-unicorn', :require => false
 
-# Use byebug
-gem 'byebug', group: [:development, :test]
+# Use pry
+gem 'pry', group: [:development, :test]
 
-gem 'monologue', git: 'https://github.com/jipiboily/monologue', branch: 'master' # blogging engine
+gem 'monologue', '0.5.0' #git: 'https://github.com/jipiboily/monologue', branch: 'master' # blogging engine
 gem "monologue-markdown", git: 'https://github.com/marcosserpa/monologue-markdown', branch: 'develop'
 gem 'redcarpet'
 gem 'coderay'
