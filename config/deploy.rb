@@ -12,6 +12,7 @@ require 'mina/unicorn'
 
 set :domain, '104.236.212.37'
 set :deploy_to, '/home/deploy/marcoserpa/'
+set :shared_path, 'shared'
 set :repository, 'https://github.com/marcosserpa/marcoserpa.git'
 set :branch, 'master'
 set :user, 'deploy'
@@ -64,6 +65,12 @@ task :setup => :environment do
   queue  %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 end
 
+before 'deploy', :symlink_directories
+
+task :symlink_directories do
+  run "ln -nfs #{shared}/public/assets #{deploy_to}/public/assets"
+end
+
 desc "Deploys the current version to the server."
 task :deploy => :environment do
   #to :before_hook do
@@ -78,6 +85,8 @@ task :deploy => :environment do
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
     #invoke :'deploy:cleanup'
+
+
 
     to :launch do
       #queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
