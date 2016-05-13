@@ -48,6 +48,12 @@ task :environment do
   # invoke :'rvm:use[ruby-1.9.3-p125@default]'
 end
 
+
+# Symlink images from shared to public
+task :symlink_directories do
+  run "ln -s /home/deploy/marcoserpa/shared/public/assets/images/ assets/images"
+end
+
 # Put any custom mkdir's in here for when `mina setup` is ran.
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
@@ -63,13 +69,11 @@ task :setup => :environment do
 
   queue! %[touch "#{deploy_to}/shared/config/secrets.yml"]
   queue  %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
+
+  symlink_directories
 end
 
-before 'deploy', :symlink_directories
-
-task :symlink_directories do
-  run "ln -nfs #{shared}/public/assets #{deploy_to}/public/assets"
-end
+# before 'deploy', :symlink_directories
 
 desc "Deploys the current version to the server."
 task :deploy => :environment do

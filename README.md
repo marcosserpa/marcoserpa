@@ -27,3 +27,9 @@ scp_marcosserpa source_file target_file
 where source_file is the path to your local image and target_file is the desired name of the image in the server. For example:
 source_file = Pictures/image.jpg
 target_file = YYYY/mm/image.jpg
+
+OBS: To symlink the images shared folder assets to app public folder:
+
+```shell
+ln -s /home/deploy/marcoserpa/shared/public/assets/images/ assets/images
+```
