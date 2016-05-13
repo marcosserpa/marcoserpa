@@ -13,4 +13,5 @@ Rails.application.config.assets.precompile += %w( monologue/foundation_icons/soc
 Rails.application.config.assets.precompile += %w( monologue/foundation_icons/social_foundicons.woff )
 Rails.application.config.assets.precompile += %w( monologue/foundation_icons/social_foundicons.ttf )
 Rails.application.config.assets.precompile += %w( highlight.pack.js )
+Rails.application.config.assets.precompile += %w( google_analytics.coffee )
 Rails.application.config.assets.precompile += %w( styles/default.css )
